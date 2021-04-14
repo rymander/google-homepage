@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <style>
 
+    .topleft{
+        float:left;
+    }
+
+    .topright{
+        float:right;
+    }
+
     .logo{
         display:flex;
         justify-content: center; 
@@ -15,6 +23,7 @@
 
     }
 
+
     .buttons{
         display:flex;
         justify-content: center;
@@ -25,6 +34,19 @@
         width: 350px;
     }
 
+    .legal {
+        padding: 10px;
+        position:absolute;
+        bottom:0;
+        right:0;
+    }
+
+    .etc {
+        padding: 10px;
+        position:absolute;
+        bottom:0;
+        left:0;
+    }
     
    
 
@@ -34,18 +56,18 @@
 <html lang="en">
     
      <header>
-            <div style="text-align: left;">
-        <a  href="">About</a>
+            <div style="text-align: left;" class="topleft">
+        <a  href="">About</a> &nbsp
         <a  href="">Store</a>
             </div>
 
-            <div style="text-align: right;">
-                <a href=""> Gmail</a>
+            <div style="text-align: right;" class="topright">
+                <a href=""> Gmail</a> &nbsp
                 <a href=""> Images</a>
             </div>
     
 
-    </head>
+    </header>
 
         <body>
             <div  class="logo">
@@ -56,8 +78,8 @@
             <input type="text" placeholder="Search">
             </div>
             <div class="buttons">
-            <button type="submit">Google Search</button>
-                <button  type="submit">I'm feelin lucky</button>
+            <button type="submit">Google Search </button>
+                <button  type="submit">I'm feelin lucky </button>
             </div>   
    
    
@@ -67,7 +89,19 @@
         </body>
 
         <footer>
+            <div style="text-align: left" class="etc">
+                <a href=""> Advertising </a> &nbsp
+                <a href=""> Business</a> &nbsp
+                <a href=""> How Search Works</a>
 
+            </div>
+            
+            <div style="text-align: right" class="legal">
+                <a href=""> Privacy</a> &nbsp
+                <a href=""> Terms</a> &nbsp
+                <a href=""> Settings</a>
+
+            </div>
 
         </footer>
 
